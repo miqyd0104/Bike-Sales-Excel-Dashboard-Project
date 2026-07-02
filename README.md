@@ -1,4 +1,4 @@
-# Bikes Sales Excel Dashboard Project
+# Bike Sales Excel Dashboard Project
 An interactive Microsoft Excel dashboard built to analyse customer demographics and identify factors influencing bike purchases. This project demonstrates data cleaning. transformation, pivot table analysis, dashboard design and interactive reporting using Excel.
 
 ## Project Overview
