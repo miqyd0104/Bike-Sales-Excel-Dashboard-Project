@@ -1,69 +1,79 @@
-# Bike Sales Excel Dashboard Project
-An interactive Microsoft Excel dashboard built to analyse customer demographics and identify factors influencing bike purchases. This project demonstrates data cleaning. transformation, pivot table analysis, dashboard design and interactive reporting using Excel.
+# Bike Sales Excel Dashboard
 
-## Project Overview
-The objective of this project was to transorm raw customer data into an interactive dashboard that provides meaningul business insights. After cleaning and preparing the dataset, Pivot Tables and Pivot Charts were used to create visualisations, while Slicers allow users to dyanmically filter the dashboard and explore the data from different perspectives.
+An interactive Microsoft Excel report that turns raw customer records into a clean, filterable view of bike-purchasing patterns. The project demonstrates a practical workflow for **data-quality checking, data preparation and repeatable business reporting**.
 
-## Business Questions
-This dashboard helps answer questions such as:
-- Does income influence whether a customer purchases a bike?
-- Which age group is most likely to purchase a bike?
-- Does commute distance affect bike purchasing behaviour?
-- How do demographics such as gender, maritial statis, education and region impact bike sales?
+![Bike Sales Excel dashboard preview](assets/dashboard-preview.png)
 
-## Dashboard Features
-The dashboard includes:
-- Average Income by Gender and Bike Purchase Status
-- Customer Age Bracket Analysis
-- Customer Commute Distance Analysis
-- Interactive Slicers for:
-- - Martial Status
-  - Region
-  - Education Level
+## Project result
 
- Users can interact with the slicers to instantly updayte every chart, making the dashboard fully dynamic and easy to explore.
+The workbook converts **1,026 raw rows into 1,000 unique, complete records** and presents the cleaned data through three PivotTables, three PivotCharts and interactive slicers.
 
- ## Skills Demonstrated
-- Data Cleaning
-- Removing Duplicate Records
-- Find & Replace
-- Data Formatting
-- IF Functions
-- Nested IF Statements
-- Creating Age Brackets
-- Pivot Tables
-- Pivot Charts
-- Dashboard Design
-- Interactive Slicers
-- Data Visualisation
-- Business Insight Generation
+| Quality check | Result |
+|---|---:|
+| Raw records reviewed | 1,026 |
+| Exact duplicate records identified and removed | 26 |
+| Cleaned records retained | 1,000 |
+| Duplicate IDs remaining | 0 |
+| Blank fields remaining | 0 |
 
- ## Data Cleaning Process
-- Removed duplicate records
-- Standardised categorical values (e.g. Married/Single, Male/Female)
-- Checked data consistency
-- Formatted income values
-- Created age brackets using nested IF statements
-- Preserved the original dataset by working on a separate worksheet
+## Business questions
 
- ## Dashboard Development
- The dashboard was built using Pivot Tables and Pivot Charts to summarise customer purchasing behaviour.
+The dashboard supports quick investigation of questions such as:
 
-- Average customer income
-- Customer age groups
-- Commute distance
-- Bike purchase decisions
+- How does average income differ between customers who did and did not purchase a bike?
+- Which age group contains the most bike purchasers?
+- How does purchase rate vary by commute distance?
+- How do marital status, education and region change the patterns shown in the report?
 
-Interactive slicers allow users to filter the dashboard by different customer demographics, enabling quick exploration of the data.
+## Data preparation and quality checks
 
- ## Key Insights 
-Some of the insights that can be explored include:
+1. Preserved the original data on the `bike_buyers` worksheet and performed cleaning on a separate `Working Sheet`.
+2. Checked for duplicate records and removed 26 exact duplicates.
+3. Expanded abbreviated marital-status and gender values into consistent, readable categories.
+4. Checked the cleaned dataset for duplicate IDs and blank fields.
+5. Applied consistent income formatting.
+6. Created age bands with nested IF statements:
+   - `Adolescent`: under 31
+   - `Middle Age`: 31–54
+   - `Old`: 55 and above
+7. Compared the final record count and key categories with the source before building the report.
 
-- Customers with higher average incomes tend to purchase more bikes.
-- Middle-aged customers represent the largest group of bike purchasers.
-- Commute distance appears to influence purchasing behaviour.
-- Customer demographics can significantly change purchasing trends when filtered.
+This leaves a clean reporting dataset containing **1,000 unique customer IDs and no blank fields**.
 
+## Dashboard and reporting features
 
+- Average income by gender and bike-purchase status
+- Bike purchases by age bracket
+- Bike purchases by commute distance
+- Interactive slicers for marital status, region and education
+- Separate worksheets for raw data, working data, PivotTables and the final dashboard
 
- 
+The slicers update all three dashboard charts together, allowing users to answer common demographic questions without editing formulas or the underlying data.
+
+## Descriptive findings
+
+- Customers who purchased a bike had a higher average income (£57,963) than customers who did not (£54,875).
+- Middle-aged customers recorded 383 purchases from 701 records, the largest number and highest age-group purchase rate (54.6%).
+- The 2–5 mile commute group had the highest purchase rate (58.6%); the more-than-10-mile group had the lowest (29.7%).
+- Filters show that the patterns change across marital status, education and region.
+
+These are descriptive patterns within this dataset and should not be interpreted as proof that any single characteristic causes a purchase.
+
+## Repository files
+
+| File | Purpose |
+|---|---|
+| [`dashboard.xlsx`](dashboard.xlsx) | Complete workbook containing the raw data, cleaned working sheet, PivotTables and interactive dashboard |
+| [`Dataset/raw_dataset.xlsx`](Dataset/raw_dataset.xlsx) | Original 1,026-row source dataset |
+| [`Dataset/clean_dataset.xlsx`](Dataset/clean_dataset.xlsx) | Cleaned 1,000-row reporting dataset with the calculated age bands |
+
+## How to explore the report
+
+1. Download and open [`dashboard.xlsx`](dashboard.xlsx) in Microsoft Excel.
+2. Select the `Dashboard` worksheet.
+3. Use the marital-status, region and education slicers to filter all charts.
+4. Review the `Working Sheet` and `Pivot Table` worksheets to trace each output back to the cleaned records.
+
+## Skills demonstrated
+
+`Excel` · `Data Cleaning` · `Duplicate Checking` · `Data Validation` · `Nested IF Statements` · `PivotTables` · `PivotCharts` · `Interactive Slicers` · `Dashboard Reporting` · `Insight Communication`
