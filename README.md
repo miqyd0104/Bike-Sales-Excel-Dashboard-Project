@@ -1,6 +1,6 @@
 # Bike Sales Excel Dashboard
 
-An interactive Microsoft Excel report that turns raw customer records into a clean, filterable view of bike-purchasing patterns. The project demonstrates a practical workflow for **data-quality checking, data preparation and repeatable business reporting**.
+An interactive Microsoft Excel report that turns raw customer records into a clean, filterable view of bike-purchasing patterns. The project demonstrates a practical workflow for **data quality checks, data preparation and repeatable business reporting**.
 
 ![Bike Sales Excel dashboard preview](assets/dashboard-preview.png)
 
@@ -53,8 +53,8 @@ The slicers update all three dashboard charts together, allowing users to answer
 ## Descriptive findings
 
 - Customers who purchased a bike had a higher average income (£57,963) than customers who did not (£54,875).
-- Middle-aged customers recorded 383 purchases from 701 records, the largest number and highest age-group purchase rate (54.6%).
-- The 2–5 mile commute group had the highest purchase rate (58.6%); the more-than-10-mile group had the lowest (29.7%).
+- Middle-aged customers recorded 383 purchases from 701 records; this was the largest purchase count and the highest age-group purchase rate (54.6%).
+- The 2–5-mile commute group had the highest purchase rate (58.6%); customers commuting more than 10 miles had the lowest (29.7%).
 - Filters show that the patterns change across marital status, education and region.
 
 These are descriptive patterns within this dataset and should not be interpreted as proof that any single characteristic causes a purchase.
